@@ -145,22 +145,24 @@ namespace _4._3
                     {
                         while (reader.Read())
                         {
-                            Label tag = new Label();
-                            tag.Content = reader[0].ToString();
+                            Label label = new Label();
+                            label.FontSize = 14;
+                            label.FontWeight = FontWeights.Bold;
+                            label.Content = reader[0].ToString();
                             switch (reader[1].ToString().Trim())
                             {
                                 case "Green":
-                                    tag.Foreground = Brushes.Green;
+                                    label.Foreground = Brushes.Green;
                                     break;
                                 case "Blue":
-                                    tag.Foreground = Brushes.Blue;
+                                    label.Foreground = Brushes.Blue;
                                     break;
                                 case "Red":
-                                    tag.Foreground = Brushes.Red;
+                                    label.Foreground = Brushes.Red;
                                     break;
                             }
-                            tag.MouseLeftButtonDown += Tag_panel_MouseLeftButtonDown;
-                            Tag_panel.Children.Add(tag);
+                            label.MouseLeftButtonDown += Tag_panel_MouseLeftButtonDown;
+                            Tag_panel.Children.Add(label);
                         }
                     }
                 }
@@ -195,7 +197,7 @@ namespace _4._3
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Этот тег уже существует");
+                        MessageBox.Show("Тег существует/не выбран или пользователя нет в БД");
                     }
                 }
             }

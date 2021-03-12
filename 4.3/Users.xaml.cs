@@ -3,7 +3,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Data.SqlClient;
 using System.Windows.Media;
-
 namespace _4._3
 {
     public partial class Users : UserControl
@@ -67,6 +66,8 @@ namespace _4._3
                         while (reader.Read())
                         {
                             Label label = new Label();
+                            label.FontSize = 14;
+                            label.FontWeight = FontWeights.Bold;
                             label.Content = reader[0].ToString();
                             switch (reader[1].ToString().Trim())
                             {
@@ -84,6 +85,12 @@ namespace _4._3
                         }
                     }
                 }
+        }
+
+        private void Tag_wrap_PreviewMouseMove(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            Tag_wrap.Background = Brushes.Yellow;
+
         }
     }
 }
