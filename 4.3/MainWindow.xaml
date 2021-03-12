@@ -17,12 +17,12 @@
             <WrapPanel x:Name="list" Margin="0">
             </WrapPanel>
         </ScrollViewer>
-        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="25" Margin="819,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TextChanged="Search_TextChanged" FontSize="14" FontWeight="Bold">
+        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="25" Margin="821,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" TextChanged="Search_TextChanged" FontSize="14" FontWeight="Bold" TabIndex="1">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.7"/>
             </TextBox.Background>
         </TextBox>
-        <Button Content="X" HorizontalAlignment="Left" Margin="962,10,0,0" VerticalAlignment="Top" Width="28" Click="Button_Click" Foreground="White">
+        <Button Content="X" HorizontalAlignment="Left" Margin="962,10,0,0" VerticalAlignment="Top" Width="28" Click="Button_Click" Foreground="White" IsCancel="True">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFFF0F46"/>
@@ -30,18 +30,18 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <ComboBox x:Name="Gender" HorizontalAlignment="Left" Margin="819,162,0,0" VerticalAlignment="Top" Width="150" SelectionChanged="Gender_SelectionChanged" Background="{x:Null}" Opacity="0.7" FontSize="14" Foreground="Black" FontWeight="Bold">
+        <ComboBox x:Name="Gender" HorizontalAlignment="Left" Margin="821,126,0,0" VerticalAlignment="Top" Width="150" SelectionChanged="Gender_SelectionChanged" Background="{x:Null}" Opacity="0.7" FontSize="14" Foreground="Black" FontWeight="Bold" TabIndex="2">
             <ComboBoxItem IsSelected="True" Content="Все"/>
             <ComboBoxItem Content="М"/>
             <ComboBoxItem Content="Ж"/>
         </ComboBox>
-        <Button x:Name="Birth" Content="Скоро ДР" HorizontalAlignment="Left" Margin="894,225,0,0" VerticalAlignment="Top" Width="75" Click="Birth_Click" FontSize="14" Foreground="White" FontWeight="Bold">
+        <Button x:Name="Birth" Content="Скоро ДР" HorizontalAlignment="Left" Margin="896,189,0,0" VerticalAlignment="Top" Width="75" Click="Birth_Click" FontSize="14" Foreground="White" FontWeight="Bold" TabIndex="3">
             <Button.Background>
                 <SolidColorBrush Color="#FFFF4DE7" Opacity="0.7"/>
             </Button.Background>
         </Button>
-        <Label Content="Поиск пользователя" HorizontalAlignment="Left" Margin="818,83,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="14"/>
-        <Button x:Name="New" Content="Добавить нового" HorizontalAlignment="Left" Margin="819,268,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Click="New_Click" Foreground="White" FontWeight="Bold">
+        <Label Content="Поиск пользователя" HorizontalAlignment="Left" Margin="820,47,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="New" Content="Добавить нового" HorizontalAlignment="Left" Margin="821,232,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Click="New_Click" Foreground="White" FontWeight="Bold" TabIndex="4">
             <Button.Background>
                 <SolidColorBrush Color="#FFFFF300" Opacity="0.7"/>
             </Button.Background>

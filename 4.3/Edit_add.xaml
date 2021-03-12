@@ -13,46 +13,46 @@
         <Grid.Background>
             <SolidColorBrush Color="#FFCD0101" Opacity="0.2"/>
         </Grid.Background>
-        <Image x:Name="photo" HorizontalAlignment="Left" Height="157" Margin="69,16,0,0" VerticalAlignment="Top" Width="157" Source="ava.png" MouseLeftButtonDown="photo_MouseLeftButtonDown"/>
-        <Label x:Name="id" Content="Айди" HorizontalAlignment="Left" Margin="60,182,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="55" Foreground="Cyan" FontWeight="Bold"/>
-        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="308,56,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="78" Foreground="#FF01FBFB" FontWeight="Bold"/>
-        <TextBox x:Name="lastname" HorizontalAlignment="Left" Height="27" Margin="427,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" PreviewTextInput="lastname_PreviewTextInput">
+        <Image x:Name="photo" HorizontalAlignment="Left" Height="157" Margin="68,29,0,0" VerticalAlignment="Top" Width="157" Source="ava.png" MouseLeftButtonDown="photo_MouseLeftButtonDown"/>
+        <Label x:Name="id" Content="id" HorizontalAlignment="Left" Margin="23,208,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="55" Foreground="Cyan" FontWeight="Bold"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="291,56,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="78" Foreground="#FF01FBFB" FontWeight="Bold"/>
+        <TextBox x:Name="lastname" HorizontalAlignment="Left" Height="27" Margin="427,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" PreviewTextInput="lastname_PreviewTextInput" TabIndex="1">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.15"/>
             </TextBox.Background>
         </TextBox>
-        <Label Content="Имя" HorizontalAlignment="Left" Margin="308,89,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="55" Foreground="#FF01FBFB" FontWeight="Bold"/>
-        <TextBox x:Name="firstname" HorizontalAlignment="Left" Height="27" Margin="427,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" PreviewTextInput="lastname_PreviewTextInput">
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="291,89,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="55" Foreground="#FF01FBFB" FontWeight="Bold"/>
+        <TextBox x:Name="firstname" HorizontalAlignment="Left" Height="27" Margin="427,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" PreviewTextInput="lastname_PreviewTextInput" TabIndex="2">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.15"/>
             </TextBox.Background>
         </TextBox>
-        <Label Content="Отчество" HorizontalAlignment="Left" Margin="308,122,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="78" Foreground="#FF01FBFB" FontWeight="Bold"/>
-        <TextBox x:Name="patronymic" HorizontalAlignment="Left" Height="27" Margin="427,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" PreviewTextInput="lastname_PreviewTextInput">
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="291,122,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="78" Foreground="#FF01FBFB" FontWeight="Bold"/>
+        <TextBox x:Name="patronymic" HorizontalAlignment="Left" Height="27" Margin="427,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" PreviewTextInput="lastname_PreviewTextInput" TabIndex="3">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.15"/>
             </TextBox.Background>
         </TextBox>
-        <Label Content="Мыло" HorizontalAlignment="Left" Margin="308,157,0,0" VerticalAlignment="Top" FontSize="14" Height="35" Width="55" Foreground="#FF01FBFB" FontWeight="Bold"/>
-        <TextBox x:Name="email" HorizontalAlignment="Left" Height="27" Margin="427,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold">
+        <Label Content="Мыло" HorizontalAlignment="Left" Margin="291,157,0,0" VerticalAlignment="Top" FontSize="14" Height="35" Width="55" Foreground="#FF01FBFB" FontWeight="Bold"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="27" Margin="427,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" TabIndex="4">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.15"/>
             </TextBox.Background>
         </TextBox>
-        <Label Content="Телефон" HorizontalAlignment="Left" Margin="308,191,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="78" Foreground="#FF01FBFB" FontWeight="Bold"/>
-        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="27" Margin="427,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" PreviewTextInput="phone_PreviewTextInput">
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="291,191,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="78" Foreground="#FF01FBFB" FontWeight="Bold"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="27" Margin="427,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="14" Foreground="#FF0AFFFF" FontWeight="Bold" PreviewTextInput="phone_PreviewTextInput" TabIndex="5">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.15"/>
             </TextBox.Background>
         </TextBox>
-        <Label Content="Пол" HorizontalAlignment="Left" Margin="123,182,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="55" Foreground="#FF01FBFB" FontWeight="Bold"/>
-        <Label Content="Дата рождения" HorizontalAlignment="Left" Margin="308,227,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="118" Foreground="#FF01FBFB" FontWeight="Bold"/>
-        <DatePicker x:Name="birthday" HorizontalAlignment="Left" Margin="431,227,0,0" VerticalAlignment="Top" FontSize="14" Height="32" Width="149" Foreground="Black" FontWeight="Bold"/>
-        <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="199,182,0,0" VerticalAlignment="Top" Width="45" FontSize="14" Height="25" Foreground="Black" FontWeight="Bold">
+        <Label Content="Пол" HorizontalAlignment="Left" Margin="23,262,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="55" Foreground="#FF01FBFB" FontWeight="Bold"/>
+        <Label Content="Дата рождения" HorizontalAlignment="Left" Margin="291,227,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="118" Foreground="#FF01FBFB" FontWeight="Bold"/>
+        <DatePicker x:Name="birthday" HorizontalAlignment="Left" Margin="431,227,0,0" VerticalAlignment="Top" FontSize="14" Height="32" Width="149" Foreground="Black" FontWeight="Bold" TabIndex="6"/>
+        <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="23,296,0,0" VerticalAlignment="Top" Width="45" FontSize="14" Height="25" Foreground="Black" FontWeight="Bold" TabIndex="7">
             <ComboBoxItem Content="м" HorizontalAlignment="Left" Width="45"/>
             <ComboBoxItem Content="ж" HorizontalAlignment="Left" Width="45"/>
         </ComboBox>
-        <Button Content="X" HorizontalAlignment="Left" Margin="612,10,0,0" VerticalAlignment="Top" Width="28" Click="Exit" Foreground="White">
+        <Button Content="X" HorizontalAlignment="Left" Margin="612,10,0,0" VerticalAlignment="Top" Width="28" Click="Exit" Foreground="White" IsCancel="True">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF0F5BFF" Offset="1"/>
@@ -60,28 +60,28 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="39" Margin="531,277,0,0" VerticalAlignment="Top" Width="43" CornerRadius="5">
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="39" Margin="427,274,0,0" VerticalAlignment="Top" Width="43" CornerRadius="5">
             <Border.Background>
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </Border.Background>
-            <Button x:Name="Save" Click="Save_Click" BorderBrush="{x:Null}">
+            <Button x:Name="Save" Click="Save_Click" BorderBrush="{x:Null}" TabIndex="10" IsDefault="True">
                 <Button.Background>
                     <ImageBrush ImageSource="save.png" Stretch="Uniform"/>
                 </Button.Background>
             </Button>
         </Border>
-        <Label Content="Сохранить" HorizontalAlignment="Left" Margin="440,278,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="91" Foreground="#FF01FBFB" FontWeight="Bold"/>
-        <ComboBox x:Name="tagof" HorizontalAlignment="Left" Margin="58,289,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold">
+        <Label Content="Сохранить" HorizontalAlignment="Left" Margin="336,275,0,0" VerticalAlignment="Top" FontSize="14" Height="34" Width="91" Foreground="#FF01FBFB" FontWeight="Bold"/>
+        <ComboBox x:Name="tagof" HorizontalAlignment="Left" Margin="78,295,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" TabIndex="8">
             <ComboBoxItem Content="Xbox Series S" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="Playstation 5" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="Nintendo Switch" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
-        <WrapPanel x:Name="Tag_panel" HorizontalAlignment="Left" Height="65" Margin="10,216,0,0" VerticalAlignment="Top" Width="293" Loaded="Tag_panel_Loaded">
+        <WrapPanel x:Name="Tag_panel" HorizontalAlignment="Left" Height="82" Margin="79,208,0,0" VerticalAlignment="Top" Width="129" Loaded="Tag_panel_Loaded">
             <WrapPanel.Background>
-                <SolidColorBrush Color="White" Opacity="0.75"/>
+                <SolidColorBrush Color="#FFDADADA" Opacity="0.6"/>
             </WrapPanel.Background>
         </WrapPanel>
-        <Button x:Name="Add_tag" Content="+" HorizontalAlignment="Left" Margin="213,290,0,0" VerticalAlignment="Top" Width="31" Foreground="White" FontWeight="Bold" Click="Add_tag_Click">
+        <Button x:Name="Add_tag" Content="+" HorizontalAlignment="Left" Margin="213,295,0,0" VerticalAlignment="Top" Width="31" Foreground="White" FontWeight="Bold" Click="Add_tag_Click" TabIndex="9">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFD3701F" Offset="1"/>

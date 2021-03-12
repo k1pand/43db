@@ -24,9 +24,9 @@ namespace _4._3
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if (lastname.Text.Length > 5 && firstname.Text.Length > 3 && email.Text.Length > 5 && email.Text.IndexOf('@') > 3 && phone.Text.Length > 7 && file_Name != null)
+            if (lastname.Text.Length > 5 && firstname.Text.Length > 3 && email.Text.Length > 5 && email.Text.IndexOf('@') > 3 && phone.Text.Length > 7)
             {
-                if (id.Content.ToString() != "Id")
+                if (id.Content.ToString() != "id")
                 {
                     using (SqlConnection connection = new SqlConnection(Connection.String))
                     {
@@ -39,7 +39,7 @@ namespace _4._3
                                                       ,[Email] = '{email.Text}'
                                                       ,[Phone] = '{phone.Text}'
                                                       ,[GenderCode] = '{((ComboBoxItem)gender.SelectedItem).Content}'
-                                                      {(file_Name != null ? @",[PhotoPath] = 'Клиенты\" + file_Name + "'" : "")}
+                                                      {(file_Name != "" ? @",[PhotoPath] = 'Клиенты\" + file_Name + "'" : "")}
                                                    WHERE ID = {id.Content}", connection);
 
                         try
@@ -79,7 +79,7 @@ namespace _4._3
                                        ,'{email.Text}'
                                        ,'{phone.Text}'
                                        , '{((ComboBoxItem)gender.SelectedItem).Content}'
-                                       ,'Клиенты\{file_Name}')", connection);
+                                        {(file_Name != "" ? @",'Клиенты\" + file_Name + "'" : ",'Клиенты\\ava.png'")})", connection);
 
                         try
                         {
@@ -100,7 +100,7 @@ namespace _4._3
                 MessageBox.Show("Проверьте все поля");
             }
         }
-        private string file_Name;
+        private string file_Name ="";
         private void photo_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             OpenFileDialog saveFile = new OpenFileDialog();
@@ -146,7 +146,7 @@ namespace _4._3
                         while (reader.Read())
                         {
                             Label tag = new Label();
-                            tag.Content = reader[0];
+                            tag.Content = reader[0].ToString();
                             switch (reader[1].ToString().Trim())
                             {
                                 case "Green":

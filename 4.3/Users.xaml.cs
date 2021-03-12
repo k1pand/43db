@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Data.SqlClient;
+using System.Windows.Media;
 
 namespace _4._3
 {
@@ -49,5 +50,41 @@ namespace _4._3
             edit.MainWindow = main;
             edit.ShowDialog();
         }
+
+
+        private void Tag_wrap_Loaded(object sender, RoutedEventArgs e)
+        {
+                Tag_wrap.Children.Clear();
+                using (SqlConnection connection = new SqlConnection(Connection.String))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand($@"SELECT Tag.Title, Tag.Color
+                                                           FROM Tag INNER JOIN TagOfClient ON Tag.ID = TagOfClient.TagID 
+                                                           WHERE TagOfClient.ClientID = {id.Content}", connection);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            Label label = new Label();
+                            label.Content = reader[0].ToString();
+                            switch (reader[1].ToString().Trim())
+                            {
+                                case "Green":
+                                    label.Foreground = Brushes.Green;
+                                    break;
+                                case "Blue":
+                                    label.Foreground = Brushes.Blue;
+                                    break;
+                                case "Red":
+                                    label.Foreground = Brushes.Red;
+                                    break;
+                            }
+                        Tag_wrap.Children.Add(label);
+                        }
+                    }
+                }
+        }
     }
 }
+

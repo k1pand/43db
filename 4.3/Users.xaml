@@ -25,24 +25,24 @@
             <Image x:Name="photo" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="ava.png"/>
         </Border>
         <Border BorderBrush="#FFFF7C21" BorderThickness="1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="800" CornerRadius="10"/>
-        <Label x:Name="id" Content="id&#xA;" HorizontalAlignment="Left" Margin="120,4,0,0" VerticalAlignment="Top" Background="{x:Null}" Height="29" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
-        <Label x:Name="gender" Content="gender&#xA;" HorizontalAlignment="Left" Margin="118,33,0,0" VerticalAlignment="Top" Background="{x:Null}" Height="31" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
-        <Label x:Name="fio" Content="fio" HorizontalAlignment="Left" Margin="186,5,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
-        <Label x:Name="birthday" Content="birthday&#xA;" HorizontalAlignment="Left" Margin="181,34,0,0" VerticalAlignment="Top" Background="{x:Null}" Height="33" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
-        <Label x:Name="phone" Content="phone" HorizontalAlignment="Left" Margin="118,64,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
-        <Label x:Name="email" Content="email&#xA;" HorizontalAlignment="Left" Margin="390,34,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
-        <Label x:Name="reg_date" Content="redd&#xA;" HorizontalAlignment="Left" Margin="296,34,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
-        <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Left" Height="29" Margin="710,61,0,0" VerticalAlignment="Top" Width="80" Foreground="White" FontWeight="Bold" FontSize="14" Click="Delete_Click">
+        <Label x:Name="id" Content="id&#xA;" HorizontalAlignment="Left" Margin="105,6,0,0" VerticalAlignment="Top" Background="{x:Null}" Height="29" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B" Width="42"/>
+        <Label x:Name="gender" Content="gender&#xA;" HorizontalAlignment="Left" Margin="104,34,0,0" VerticalAlignment="Top" Background="{x:Null}" Height="31" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
+        <Label x:Name="fio" Content="fio" HorizontalAlignment="Left" Margin="167,5,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
+        <Label x:Name="birthday" Content="birthday&#xA;" HorizontalAlignment="Left" Margin="451,5,0,0" VerticalAlignment="Top" Background="{x:Null}" Height="33" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
+        <Label x:Name="phone" Content="phone" HorizontalAlignment="Left" Margin="256,34,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
+        <Label x:Name="email" Content="email&#xA;" HorizontalAlignment="Left" Margin="394,34,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B" Height="32"/>
+        <Label x:Name="reg_date" Content="regd&#xA;" HorizontalAlignment="Left" Margin="172,34,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B" Height="31"/>
+        <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Left" Height="29" Margin="710,61,0,0" VerticalAlignment="Top" Width="80" Foreground="White" FontWeight="Bold" FontSize="14" Click="Delete_Click" TabIndex="2">
             <Button.Background>
                 <SolidColorBrush Color="#FF0068FF" Opacity="0.7"/>
             </Button.Background>
         </Button>
-        <Button x:Name="Edit_add" Content="Изменить" HorizontalAlignment="Left" Height="29" Margin="710,27,0,0" VerticalAlignment="Top" Width="80" Foreground="White" FontWeight="Bold" FontSize="14" Click="Edit_Click">
+        <Button x:Name="Edit_add" Content="Изменить" HorizontalAlignment="Left" Height="29" Margin="710,27,0,0" VerticalAlignment="Top" Width="80" Foreground="White" FontWeight="Bold" FontSize="14" Click="Edit_Click" TabIndex="1">
             <Button.Background>
                 <SolidColorBrush Color="#FF17FF00" Opacity="0.7"/>
             </Button.Background>
         </Button>
-        <Label x:Name="tag" Content="tag" HorizontalAlignment="Left" Margin="390,64,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="16" FontWeight="Bold" Foreground="#FFFFF63B"/>
+        <WrapPanel x:Name="Tag_wrap" HorizontalAlignment="Left" Height="33" Margin="167,65,0,0" VerticalAlignment="Top" Width="510" Loaded="Tag_wrap_Loaded"/>
 
     </Grid>
 </UserControl>

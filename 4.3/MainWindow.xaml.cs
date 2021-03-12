@@ -74,6 +74,7 @@ namespace _4._3
         private void New_Click(object sender, RoutedEventArgs e)
         {
             Edit_add open = new Edit_add();
+            open.MainWindow = this;
             open.Show();
         }
     }
