@@ -42,7 +42,7 @@
                 <SolidColorBrush Color="#FF17FF00" Opacity="0.7"/>
             </Button.Background>
         </Button>
-        <WrapPanel x:Name="Tag_wrap" HorizontalAlignment="Left" Height="33" Margin="167,65,0,0" VerticalAlignment="Top" Width="510" Loaded="Tag_wrap_Loaded" ToolTip="Теги" PreviewMouseMove="Tag_wrap_PreviewMouseMove" >
+        <WrapPanel x:Name="Tag_wrap" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Center" Loaded="Tag_wrap_Loaded" ToolTip="Теги" MouseEnter="Tag_wrap_MouseEnter" >
             <WrapPanel.OpacityMask>
                 <SolidColorBrush Color="Black" Opacity="0.7"/>
             </WrapPanel.OpacityMask>

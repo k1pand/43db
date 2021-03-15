@@ -87,10 +87,12 @@ namespace _4._3
                 }
         }
 
-        private void Tag_wrap_PreviewMouseMove(object sender, System.Windows.Input.MouseEventArgs e)
+        private void Tag_wrap_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            Tag_wrap.Background = Brushes.Yellow;
-
+            if (Tag_wrap.Background != Brushes.Yellow)
+                Tag_wrap.Background = Brushes.Yellow;
+            else
+                Tag_wrap.Background = Brushes.Transparent;
         }
     }
 }
